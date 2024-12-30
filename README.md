@@ -47,23 +47,34 @@ input a,b,c,d;
 output f1;
 assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
 endmodule
+
+module funct2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((~y & z)|( w & y )|(x & y));
+endmodule
 ```
-
- Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
 Developed by:KAMLESH.Y RegisterNumber:24003690
-
-
-**RTL realization**
 
 **Output:**
 
 **RTL**
-![image](https://github.com/user-attachments/assets/04b52215-bafe-4631-b427-2254b506469e)
+
+Boolean function minimization f1
+![image](https://github.com/user-attachments/assets/e985dbd7-7cb8-465d-a22e-9c8a62776f7b)
+
+Boolean function minimization f2
+![image](https://github.com/user-attachments/assets/944fd430-d319-47b3-a2ce-36ba9372a21d)
 
 
 **Timing Diagram**
-![image](https://github.com/user-attachments/assets/84799b6a-cc58-42f1-8e29-864cad832fb1)
+
+Boolean function minimization f1
+![image](https://github.com/user-attachments/assets/e902c3e1-9b22-406d-a4ab-f1f8064d4b5a)
+
+Boolean function minimization f2
+![image](https://github.com/user-attachments/assets/e077bbe3-64d3-4ca4-a1df-30a7bef26c70)
+
 
 
 **Result:**
